@@ -5,66 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter Mackey Portfolio | My Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <style>
-      body { padding-top: 80px; }
-</style>
+        body { padding-top: 80px; }
+    </style>
 </head>
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html">My Portfolio</a>
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="index.html">Home</a>
-                    <a class="nav-link" href="about.html">About</a>
-                    <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                <a class="navbar-brand" href="index.html">Peter Mackey</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-<main class="container my-5">
-    <h1>My Projects</h1>
-    <div class="row">
-    <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <img src="images/nova-menu.png" class="card-img-top" alt="Project Nova Menu">
-            <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Project Nova: Interface</h5>
-                <p class="card-text">Custom-built console interface developed in Java.</p>
-                <a href="projects/ProjectNova.java" class="btn btn-dark">Source Code</a>
-            </div>
-        </div>
-    </div>
-    <video width="100%" controls class="rounded shadow border">
-  <source src="images/nova-demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
-    <div class="col-md-4 mb-4">
-        <div class="card shadow-sm">
-            <img src="images/nova-save-system.png" class="card-img-top" alt="Save System Logic">
-            <div class="card-body">
-                <h5 class="card-title">Data Persistence</h5>
-                <p class="card-text">Demonstrating file I/O and persistent state management.</p>
-            </div>
+    <main class="container my-5">
+        <div class="mb-4">
+            <h1>My Projects</h1>
+            <p class="text-muted">Selected academic and personal software projects demonstrating programming, problem-solving, and system design.</p>
         </div>
-    </div>
-</div>
-    <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="images/nova-logic.png" class="card-img-top" alt="Project Thumbnail">
-                <div class="card-body">
-                    <h5 class="card-title">Project Nova: Java Strategy Engine</h5>                   
-		    <p class="card-text">A fully completed Java application featuring Object-Oriented Design, persistent game-saving functionality, and a modular player state system.</p>
-                    <a href="https://github.com/pistolpete2018/PortfolioWebsite/tree/main/java-nova" class="btn btn-dark">View Source Code</a>
+
+        <div class="row g-4">
+            <!-- Project 1: Project Nova -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/nova-menu.png" class="card-img-top" alt="Project Nova Menu">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Project Nova (Java)</h5>
+                        <p class="card-text"><strong>Overview:</strong> A text-based Java game where players explore and discover creatures with persistent file-based save/load functionality[cite: 1].</p>
+                        <p class="card-text"><strong>Technologies:</strong> Java, Object-Oriented Programming (OOP), File I/O, Linux/CLI[cite: 1, 3].</p>
+                        <p class="card-text"><strong>My Role:</strong> Designed and implemented the game loop, object structure, save/load persistence, and input validation[cite: 1].</p>
+                        <p class="card-text"><strong>Challenges &amp; Skills:</strong> Structured clean object relationships and handled invalid user inputs reliably without crashing[cite: 1].</p>
+                        <div class="mt-auto d-flex gap-2 flex-wrap">
+                            <a href="https://github.com/pistolpete2018/PortfolioWebsite/tree/main/java-nova" target="_blank" class="btn btn-dark btn-sm">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Blackjack AI Project -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/nova-logic.png" class="card-img-top" alt="Algorithm and strategy project visual">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Blackjack AI Project</h5>
+                        <p class="card-text"><strong>Overview:</strong> A program evaluating different AI search and decision-making methods (including Monte Carlo and A*) for playing Blackjack[cite: 1].</p>
+                        <p class="card-text"><strong>Technologies:</strong> Search &amp; Decision Algorithms, Data Structures, Git[cite: 1].</p>
+                        <p class="card-text"><strong>My Role:</strong> Built and compared the strategy approaches across game rules and decision scenarios[cite: 1].</p>
+                        <p class="card-text"><strong>Challenges &amp; Skills:</strong> Strengthened understanding of how AI decision logic and data structures perform under rule constraints[cite: 1].</p>
+                        <div class="mt-auto">
+                            <a href="[Blackjack AI Repo Link]" target="_blank" class="btn btn-outline-dark btn-sm">Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Personal Portfolio Website -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/nova-save-system.png" class="card-img-top" alt="Portfolio and system work visual">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Personal Portfolio Website</h5>
+                        <p class="card-text"><strong>Overview:</strong> A multi-page, mobile-friendly portfolio showcasing projects, skills, and coursework[cite: 1, 2, 3].</p>
+                        <p class="card-text"><strong>Technologies:</strong> HTML5, CSS3, Bootstrap 5, Git &amp; GitHub Pages[cite: 1, 3].</p>
+                        <p class="card-text"><strong>My Role:</strong> Planned the page layout, built responsive components, and managed version history on GitHub[cite: 1, 3].</p>
+                        <p class="card-text"><strong>Challenges &amp; Skills:</strong> Adapted layouts cleanly across screen sizes and maintained consistent navigation and styling[cite: 1].</p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/pistolpete2018/PortfolioWebsite" target="_blank" class="btn btn-outline-dark btn-sm">GitHub Repo</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-</main>
-<footer class="bg-light text-center py-3 border-top mt-5">
-        <p>&copy; 2026 Peter Mackey | Student ID: 2712769</p>
+
+        <!-- Project Demo Video Section -->
+        <section class="mt-5 pt-4 border-top">
+            <h2 class="h4 mb-3">Project Nova Walkthrough Demo</h2>
+            <div class="ratio ratio-16x9 rounded shadow border overflow-hidden" style="max-width: 800px;">
+                <video controls>
+                    <source src="images/nova-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center py-4 border-top mt-5">
+        <p class="mb-0">&copy; 2026 Peter Mackey | Dundee, Scotland</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
